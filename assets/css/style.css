@@ -418,27 +418,19 @@ Header Style
   letter-spacing: 1px;
 }
 
-.header-area .main-nav .nav li.has-sub ul.sub-menu li:last-child a:hover,
-.background-header .main-nav .nav li.has-sub ul.sub-menu li:last-child a:hover {
-  padding-left: 25px !important;
-}
+
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff;
-  background-color: #2a2a2a;
+  color: #fff !important;
+  background-color: #2a2a2a !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fff;
   opacity: 1;
 }
 
-.header-area .main-nav .nav li.has-sub {
-  position: relative;
-  padding-right: 15px;
-}
 
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
@@ -602,13 +594,16 @@ Header Style
     top: 15px;
     right: 70px;
   }
-  .header-area.header-sticky .nav li a:hover,
-  .header-area.header-sticky .nav li a.active {
+  .header-area .main-nav .nav li a.active {
+    color: #fff !important;
+    background-color: #edbb24 !important;
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    width: 0% !important;
-    margin: auto;
-    color: #333!important;
-    opacity: 1;
+  .header-area.header-sticky .nav li a.active {
+ background-color: #282b2f;
+ color: #fff;
   }
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
