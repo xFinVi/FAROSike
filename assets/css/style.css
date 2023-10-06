@@ -522,12 +522,13 @@ Header Style
   -webkit-transform-origin: 33% 0;
   transform-origin: 33% 0;
   top: 10px;
+  
 }
 
 .header-area .main-nav .menu-trigger.active span,
 .header-area .main-nav .menu-trigger.active span:before,
 .header-area .main-nav .menu-trigger.active span:after {
-  background-color: transparent;
+  background-color: #787777;
   width: 100%;
 }
 
@@ -560,7 +561,7 @@ Header Style
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fff;
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -603,10 +604,10 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    background-color: #cb3e47!important;
+
     width: 0% !important;
     margin: auto;
-    color: #fff!important;
+    color: #333!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -666,10 +667,7 @@ Header Style
     background: #fff !important;
     color: #1e1e1e !important;
   }
-  .header-area .main-nav .nav li a:hover {
-    background: #fff !important;
-    color: #7453fc!important;
-  }
+
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
     visibility: inherit;
@@ -806,19 +804,10 @@ Categories & Collections Style
 
 .categories-collections {
 
-  padding: 120px 0px 150px 0px;
+  padding: 4rem 0;
   position: relative;
 }
 
-.categories-collections:after {
-  background-image: url(/assets/images/category-collection-dec.png);
-  width: 300px;
-  height: 282px;
-  position: absolute;
-  bottom: 0;
-  right: 30px;
-  content: '';
-}
 
 .categories .item {
   background-color: #282b2f;
@@ -1156,8 +1145,7 @@ Footer Style
 */
 
 footer {
-  background: rgb(35, 35, 35);
-  background: linear-gradient(132deg, rgb(215, 214, 220) 25%, rgb(47, 47, 47) 100%);
+  background: rgb(56, 57, 57);
   text-align: center;
   padding: 25px 0px;
 }
@@ -1193,16 +1181,16 @@ Page Heading Style
   text-align: center;
 }
 
-.page-heading h6 {
-  font-size: 20px;
+.page-heading h2 {
+  color: #333;
+  font-size: 2rem;
   margin-bottom: 15px;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
 
-.page-heading h2 {
+.page-heading h6 {
   color: #333;
-  font-size: 50px;
   font-weight: 700;
   line-height: 66px;
   text-transform: uppercase;
@@ -1322,7 +1310,7 @@ Explore Style
 }
 
 .discover-items {
-  padding: 400px 0px 120px 0px;
+  padding: 2rem 0;
   position: relative;
 }
 
@@ -1571,16 +1559,6 @@ Details Page Style
   overflow: hidden;
 }
 
-.item-details-page button:after {
-  width: 50%;
-  height: 2px;
-  background-color: #fff;
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-}
 
 .item-details-page button:hover {
   background-color: #fff;
@@ -1816,7 +1794,7 @@ Create Page Style
 */
 
 #contact {
-  background-color: #37393c;
+  background-color: #e5e6e7;
   border-radius: 20px;
   padding: 60px 30px;
   margin-bottom: 120px;
@@ -1827,11 +1805,11 @@ Create Page Style
   height: 46px;
   text-align: left;
   padding: 0px 15px;
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: #ffffff;
   margin-bottom: 30px;
   font-weight: 500;
   color: #afafaf;
+  border: none;
 }
 
 #contact input::placeholder {
@@ -1839,7 +1817,7 @@ Create Page Style
 }
 
 #contact label {
-  font-size: 15px;
+  font-size: 15px; 
   color: #fff;
   margin-bottom: 8px;
 }
@@ -1852,11 +1830,13 @@ Create Page Style
 }
 
 #contact button {
-  margin-top: 30px;
-  width: 100%;
+  background-color: #3b6ae2;
+  color: #ffffff;
+  border: none;
+  margin: 0 auto;
+  width: 50%;
   text-align: center;
 }
-
 
 
 
@@ -1873,6 +1853,16 @@ body {
 @media (max-width: 767px) {
   .top-seller .item {
     justify-content: center;
+  }
+  .page-heading h2 {
+    font-size: 2rem;
+  }
+
+  .header-text h6{
+    margin-bottom: 2rem;
+  }
+  .header-text h2{
+    font-size: 2rem;
   }
 }
 
@@ -1939,6 +1929,11 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  
+@media (max-width: 440px) {
+  .header-text h2 {
+    font-size: 1.5rem;
+  }
+  .header-text h6 {
+    font-size: 1rem;
+  }
 }
