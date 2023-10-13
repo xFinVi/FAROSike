@@ -280,15 +280,52 @@
 
 
 
+/* const navBarText = {
+  en: {
+    home: 'Home',
+    products: 'Products',
+    company: 'Company',
+    contact: 'Contact Us',
+  },
+  el: {
+    home: 'Αρχική',
+    products: 'Προϊόντα',
+    company: 'Εταιρία',
+    contact: 'Επικοινωνία',
+  },
+};
 
 
+function translateLanguage(language) {
+   // Select the elements for which you want to change the text
+   c
+  const selectedText = navBarText[language];
+   // Update the text based on the selected language
+   homeLink.textContent = selectedText.home;
+   productsLink.textContent = selectedText.products;
+   companyLink.textContent = selectedText.company;
+   contactLink.textContent = selectedText.contact;
+  };
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleLanguageButton = document.getElementById('toggleLanguageIndex');
+  let currentLanguage = 'en'; // Default to English
+
+  toggleLanguageButton.addEventListener('click', function () {
+    // Toggle between English and Greek
+    currentLanguage = currentLanguage === 'en' ? 'el' : 'en';
+
+    // Call the updateLanguage function with the selected language
+    translateLanguage(currentLanguage);
+  });
+
+  // Initialize content with the default language
+  translateLanguage(currentLanguage);
+});
 
 
-
-
-
+ */
 
 
 

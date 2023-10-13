@@ -3,18 +3,30 @@ const text = {
       
       bestSellersTitle: "Explore Some Of The Best Sellers",
       productsTitle: "Products Currently In The Market",
+      home: 'Home',
+      products: 'Products',
+      company: 'Company',
+      contact: 'Contact Us',
     },
   
     el: {
      
-      bestSellersTitle: "Εξερευνήστε Ορισμένα από τους Καλύτερους Πωλητές",
+      bestSellersTitle: "Εξερευνήστε μερικά από τα Best Seller",
       productsTitle: "Προϊόντα Που Υπάρχουν Αυτή τη Στιγμή στην Αγορά",
+      home: 'Αρχική',
+      products: 'Προϊόντα',
+      company: 'Εταιρεία',
+      contact: 'Επικοινωνία',
     },
   };
 /* index page */
 function updateContent(language) {
   const bestSellerElement = document.getElementById("best-seller");  
   const inMarketElement = document.getElementById("in-market");
+  const homeLink = document.getElementById('homeLink');
+  const productsLink = document.getElementById('productsLink');
+  const companyLink = document.getElementById('companyLink');
+  const contactLink = document.getElementById('contactLink');
 
   const selectedLanguage = text[language];
 
@@ -34,6 +46,10 @@ function updateContent(language) {
   </div>
 
     `;
+    homeLink.textContent = selectedLanguage.home;
+   productsLink.textContent = selectedLanguage.products;
+   companyLink.textContent = selectedLanguage.company;
+   contactLink.textContent = selectedLanguage.contact;
 } 
 
 

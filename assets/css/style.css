@@ -108,8 +108,8 @@ body {
 
 .border-button a {
   font-size: 14px;
-  color: #fff;
-  background-color: #0d0d0d;
+  color: #000000;
+  background-color: #ffffff;
   border: none;
   padding: 12px 30px;
   display: inline-block;
@@ -118,6 +118,7 @@ body {
   transition: all .3s;
   position: relative;
   overflow: hidden;
+  z-index: 100;
 }
 
 

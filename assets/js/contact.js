@@ -6,7 +6,11 @@ const text = {
       surname: 'Last name',
       phoneNumber: 'Phone Number',
       yourFile: 'Your File',
-      submit:'Send'
+      submit:'Send',
+      home: 'Home',
+      products: 'Products',
+      company: 'Company',
+      contact: 'Contact Us',
     },
   
     el: {
@@ -18,6 +22,10 @@ const text = {
       phoneNumber: 'Τηλέφωνο',
       yourFile: 'Αρχεία',
       submit: 'Αποστολη',
+      home: 'Αρχική',
+      products: 'Προϊόντα',
+      company: 'Εταιρεία',
+      contact: 'Επικοινωνία',
     },
   };
 
@@ -31,7 +39,17 @@ const text = {
   const phoneLabelElement = document.getElementById("phoneLabel");
   const submitLabelElement = document.getElementById("form-submit");
 
+  const homeLink = document.getElementById('homeLink');
+  const productsLink = document.getElementById('productsLink');
+  const companyLink = document.getElementById('companyLink');
+  const contactLink = document.getElementById('contactLink');
+
   const selectedLanguage = text[language];
+
+  // Update the text based on the selected language
+
+
+
 
   contactElement.innerHTML = `
 
@@ -50,6 +68,10 @@ const text = {
   phoneLabelElement.textContent = selectedLanguage.phoneNumber;
   yourFileElement.textContent = selectedLanguage.yourFile;
   submitLabelElement.textContent = selectedLanguage.submit;
+  homeLink.textContent = selectedLanguage.home;
+  productsLink.textContent = selectedLanguage.products;
+  companyLink.textContent = selectedLanguage.company;
+  contactLink.textContent = selectedLanguage.contact; 
 
       
   
